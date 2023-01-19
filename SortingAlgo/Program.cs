@@ -29,44 +29,11 @@ namespace SortingAlgo
 
         public static void BubbleSortAscending(int[] input, int length)
         {
-            
-                int Iteration = 0;
-
-                var itemMoved = false;
-                do
-                {
-                   //DisplayArray(input, length);
-                    itemMoved = false;
-                    //loop through every element of the array
-                    for (int i = 0; i < (length - 1); i++)
-                    {
-                        //compare if the element is greater than the next element, swap them
-                        if (input[i] > input[i + 1])
-                        {
-                            //if true swap the elements
-                            int lowerValue = input[i + 1];
-                            input[i + 1] = input[i];
-                            input[i] = lowerValue;
-                            
-                            itemMoved = true;//item has moved
-                        }
-                        Iteration++;
-                    }
-                } while (itemMoved);//if item has moved start from the beginning again
-                Console.WriteLine("Iteration of normal: " + Iteration);
-            
-
-
-        }
-
-        public static void BubbleSortAscendingImproved(int[] input, int length)
-        {
-            int Iteration = 0;
+            int num_run = 0;
 
             var itemMoved = false;
             do
             {
-                //DisplayArray(input, length);
                 itemMoved = false;
                 //loop through every element of the array
                 for (int i = 0; i < (length - 1); i++)
@@ -81,23 +48,50 @@ namespace SortingAlgo
 
                         itemMoved = true;//item has moved
                     }
-                    //length--;
-                    Iteration++;
+                    num_run++;
+
+
                 }
             } while (itemMoved);//if item has moved start from the beginning again
-            Console.WriteLine("Iteration of improve: " + Iteration);
 
+            Console.WriteLine("\nNumber of run: " + num_run);
+
+        }
+
+        public static void BubbleSortAscendingImproved(int[] input, int length)
+        {
+            int num_run = 0;
+            var itemMoved = false;
+            do
+            {
+                itemMoved = false;
+                //loop through every element of the array
+                for (int i = 0; i < (length - 1); i++)
+                {
+                    //compare if the element is greater than the next element, swap them
+                    if (input[i] > input[i + 1])
+                    {
+                        //if true swap the elements
+                        int lowerValue = input[i + 1];
+                        input[i + 1] = input[i];
+                        input[i] = lowerValue;
+                        itemMoved = true;//item has moved
+                    }
+                    num_run++;
+
+                }
+                length--;
+            } while (itemMoved);//if item has moved start from the beginning again
+            Console.WriteLine("\nNumber of run: " + num_run);
         }
 
         public static void BubbleSortDesending(int[] input, int length)
         {
 
-            //int Iteration = 0;
 
             var itemMoved = false;
             do
             {
-                //DisplayArray(input, length);
                 itemMoved = false;
                 //loop through every element of the array
                 for (int i = 0; i < (length - 1); i++)
@@ -110,40 +104,46 @@ namespace SortingAlgo
                         input[i + 1] = input[i];
                         input[i] = lowerValue;
 
-                        itemMoved = true;//item has moved
+                        itemMoved = true;//item has moveds
                     }
-                    //Iteration++;
+
+
                 }
+                length--;
             } while (itemMoved);//if item has moved start from the beginning again
-                                //Console.WriteLine("Iteration: " + Iteration);
-                                
+
         }
 
         static void Main(string[] args)
         {
-            int[] intArray = { 33, 44, 66, 23, 60, 56, 32, 77, 15 };
+            int[] intArray = new int[15];
             int length = 9;
-            //do
-            //{
-            //    Console.Write("Enter number of elements (1-15) for the array: ");
-            //    length = int.Parse(Console.ReadLine());
-            //} while (length < 1 || length > 15);
+            do
+            {
+                Console.Write("Enter number of elements (1-15) for the array: ");
+                length = int.Parse(Console.ReadLine());
+            } while (length < 1 || length > 15);
 
-            //GenerateRandomIntegers(intArray, length);
+            GenerateRandomIntegers(intArray, length);
             Console.WriteLine("The Unsorted array:");
             DisplayArray(intArray, length);
 
+
+            BubbleSortAscending(intArray, length);
+            Console.WriteLine("The sorted array normal:");
+            DisplayArray(intArray, length);
+
+
             BubbleSortAscendingImproved(intArray, length);
-
-
-            //BubbleSortDesending(intArray, length);
-
-            //DisplayArray(intArray, length);
-
-            //BubbleSortAscending(intArray, length);
-            
             Console.WriteLine("The sorted array improve:");
             DisplayArray(intArray, length);
+
+
+
+            BubbleSortDesending(intArray, length);
+            Console.WriteLine("\nThe sorted array desending:");
+            DisplayArray(intArray, length);
+
             Console.ReadKey();
         }
 
