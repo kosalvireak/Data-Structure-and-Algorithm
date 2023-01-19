@@ -60,7 +60,7 @@ namespace SortingAlgo
 
         public static void BubbleSortAscendingImproved(int[] input, int length)
         {
-            int num_run = 0;
+            int count = 0;
             var itemMoved = false;
             do
             {
@@ -77,12 +77,12 @@ namespace SortingAlgo
                         input[i] = lowerValue;
                         itemMoved = true;//item has moved
                     }
-                    num_run++;
+                    count++;
 
                 }
                 length--;
             } while (itemMoved);//if item has moved start from the beginning again
-            Console.WriteLine("\nNumber of run: " + num_run);
+            Console.WriteLine("\nNumber of run: " + count);
         }
 
         public static void BubbleSortDesending(int[] input, int length)

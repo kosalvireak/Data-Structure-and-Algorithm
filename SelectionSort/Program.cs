@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace InsertionSort
+namespace SelectionSort
 {
     internal class Program
     {
@@ -22,24 +22,31 @@ namespace InsertionSort
 
 
         }
-
-        static int[] InsertionSort(int[] inputArray, int length)
+        public static void SelectionSort(int[] input, int length)
         {
-            for (int i = 0; i < length - 1; i++)
+            
+            int n = length - 1;
+            for (int i = 0; i <= n; i++)//loop through every element of the array
             {
-                for (int j = i + 1; j > 0; j--)
+                int min = i;
+                //find the lowest value
+                for (int j = i + 1; j <= n; j++)
                 {
-                    if (inputArray[j - 1] > inputArray[j])
+                    if (input[min] > input[j])
                     {
-                        int temp = inputArray[j - 1];
-                        inputArray[j - 1] = inputArray[j];
-                        inputArray[j] = temp;
+                        min = j;    //assign j to min so that min now points to the minimum data
                     }
                 }
-            }
-            return inputArray;
-        }
 
+                if (min != i)
+                {
+                    //swap the elements
+                    var lowerValue = input[min];
+                    input[min] = input[i];
+                    input[i] = lowerValue;
+                }
+            }
+        }
 
         static void Main(string[] args)
         {
@@ -56,8 +63,8 @@ namespace InsertionSort
             DisplayArray(intArray, length);
 
 
-            InsertionSort(intArray, length);
-            Console.WriteLine("\nThe Insertion Sort array:");
+            SelectionSort(intArray, length);
+            Console.WriteLine("\nThe Selection Sort array:");
             DisplayArray(intArray, length);
             Console.ReadKey();
         }
