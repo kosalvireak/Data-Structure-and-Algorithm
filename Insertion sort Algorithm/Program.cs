@@ -40,6 +40,23 @@ namespace InsertionSort
             return inputArray;
         }
 
+        static int[] InsertionSort_Decending(int[] inputArray, int length)
+        {
+            for (int i = 0; i < length - 1; i++)
+            {
+                for (int j = i + 1; j > 0; j--)
+                {
+                    if (inputArray[j - 1] < inputArray[j])
+                    {
+                        int temp = inputArray[j - 1];
+                        inputArray[j - 1] = inputArray[j];
+                        inputArray[j] = temp;
+                    }
+                }
+            }
+            return inputArray;
+        }
+
 
         static void Main(string[] args)
         {
@@ -57,7 +74,11 @@ namespace InsertionSort
 
 
             InsertionSort(intArray, length);
-            Console.WriteLine("\nThe Insertion Sort array:");
+            Console.WriteLine("\n The Insertion Sort array:");
+            DisplayArray(intArray, length);
+
+            InsertionSort_Decending(intArray, length);
+            Console.WriteLine("\n The Insertion Sort Decending array:");
             DisplayArray(intArray, length);
             Console.ReadKey();
         }

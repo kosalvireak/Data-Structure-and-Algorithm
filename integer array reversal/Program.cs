@@ -28,12 +28,15 @@ namespace ArrayReversal
 
             int k = 0;
             while(k < length-1)
+            while(k < length - 1)
             {
                 int temp = intArray[k];
                 intArray[k] = intArray[length - 1];
                 intArray[length - 1] = temp;
                 length--;
                 k++;
+                
+
             }
             
 

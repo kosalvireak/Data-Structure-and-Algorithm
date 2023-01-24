@@ -47,6 +47,31 @@ namespace SelectionSort
                 }
             }
         }
+        public static void SelectionSort_Decending(int[] input, int length)
+        {
+
+            int n = length - 1;
+            for (int i = 0; i <= n; i++)//loop through every element of the array
+            {
+                int min = i;
+                //find the lowest value
+                for (int j = i + 1; j <= n; j++)
+                {
+                    if (input[min] < input[j])
+                    {
+                        min = j;    //assign j to min so that min now points to the minimum data
+                    }
+                }
+
+                if (min != i)
+                {
+                    //swap the elements
+                    var lowerValue = input[min];
+                    input[min] = input[i];
+                    input[i] = lowerValue;
+                }
+            }
+        }
 
         static void Main(string[] args)
         {
@@ -66,6 +91,11 @@ namespace SelectionSort
             SelectionSort(intArray, length);
             Console.WriteLine("\nThe Selection Sort array:");
             DisplayArray(intArray, length);
+
+            SelectionSort_Decending(intArray, length);
+            Console.WriteLine("\nThe Selection Sort Decending array:");
+            DisplayArray(intArray, length);
+
             Console.ReadKey();
         }
     }
