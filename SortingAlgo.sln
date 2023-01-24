@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArrayReversal", "integer ar
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SelectionSort", "SelectionSort\SelectionSort.csproj", "{F75FFAF8-1CB7-4A2F-AD0F-5C078D2392D7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArrayReversal", "integer array reversal\ArrayReversal.csproj", "{410B4AA6-D37D-4C89-BF6C-BA962772F99F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -29,10 +31,6 @@ Global
 		{410B4AA6-D37D-4C89-BF6C-BA962772F99F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{410B4AA6-D37D-4C89-BF6C-BA962772F99F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{410B4AA6-D37D-4C89-BF6C-BA962772F99F}.Release|Any CPU.Build.0 = Release|Any CPU
-		{F75FFAF8-1CB7-4A2F-AD0F-5C078D2392D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F75FFAF8-1CB7-4A2F-AD0F-5C078D2392D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F75FFAF8-1CB7-4A2F-AD0F-5C078D2392D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F75FFAF8-1CB7-4A2F-AD0F-5C078D2392D7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
