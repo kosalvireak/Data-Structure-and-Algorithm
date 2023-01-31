@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArrayReversal", "integer ar
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SelectionSort", "SelectionSort\SelectionSort.csproj", "{F75FFAF8-1CB7-4A2F-AD0F-5C078D2392D7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BinarySearchAlgo", "BinarySearchAlgo\BinarySearchAlgo.csproj", "{E2A1DC8F-909E-4D13-B4D6-1D6C43EF9523}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{F75FFAF8-1CB7-4A2F-AD0F-5C078D2392D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F75FFAF8-1CB7-4A2F-AD0F-5C078D2392D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F75FFAF8-1CB7-4A2F-AD0F-5C078D2392D7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E2A1DC8F-909E-4D13-B4D6-1D6C43EF9523}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E2A1DC8F-909E-4D13-B4D6-1D6C43EF9523}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E2A1DC8F-909E-4D13-B4D6-1D6C43EF9523}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E2A1DC8F-909E-4D13-B4D6-1D6C43EF9523}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
