@@ -26,7 +26,7 @@ namespace SelectionSort
         {
             
             int n = length - 1;
-            for (int i = 0; i <= n; i++)//loop through every element of the array
+            for (int i = 0; i < n; i++)//loop through every element of the array
             {
                 int min = i;
                 //find the lowest value
