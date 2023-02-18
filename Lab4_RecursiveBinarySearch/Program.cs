@@ -49,8 +49,8 @@ namespace Lab4_RecursiveBinarySearch
 
         static void Main(string[] args)
         {
-            int[] intArray1 = new int[] { 1, 6, 7, 10, 12, 13, 16, 17, 21 };
-            int[] intArray2 = new int[] { 2, 3, 4, 7, 10, 11, 13, 16, 19 };
+            int[] intArray1 = new int[] { 1, 6, 7, 10, 12, 13, 16, 17, 21, 25, 27 };
+            int[] intArray2 = new int[] { 2, 3, 4, 7, 10, 11, 13, 16, 19, 22, 27, 33 };
 
             //int length;
 
