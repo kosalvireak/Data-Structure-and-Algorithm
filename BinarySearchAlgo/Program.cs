@@ -38,9 +38,9 @@ namespace BinarySearchAlgo
                     while (mid > 0 && dataArray[mid - 1] == key )
                     {
                         mid--;
-            }
+                    }
                     return mid;
-        }
+                }
             }
             return -1; //not found
         }

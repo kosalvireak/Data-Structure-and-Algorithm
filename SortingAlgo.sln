@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecursiveFactorial_CSharp",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PartitionOnly", "PartitionOnly\PartitionOnly.csproj", "{D9C1930F-DBEC-4504-8076-3DCF01547D4A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab4_RecursiveBinarySearch", "Lab4_RecursiveBinarySearch\Lab4_RecursiveBinarySearch.csproj", "{F1998320-F8AA-4FAB-B961-1B380E8C951A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{D9C1930F-DBEC-4504-8076-3DCF01547D4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D9C1930F-DBEC-4504-8076-3DCF01547D4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D9C1930F-DBEC-4504-8076-3DCF01547D4A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F1998320-F8AA-4FAB-B961-1B380E8C951A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F1998320-F8AA-4FAB-B961-1B380E8C951A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F1998320-F8AA-4FAB-B961-1B380E8C951A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F1998320-F8AA-4FAB-B961-1B380E8C951A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
