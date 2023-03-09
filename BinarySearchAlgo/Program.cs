@@ -44,35 +44,6 @@ namespace BinarySearchAlgo
             }
             return -1; //not found
         }
-        //static int BinarySearchFor1stOccurance(int[] dataArray, int key)
-        //{
-        //    int min = 0;
-        //    int max = dataArray.Count() - 1;
-        //    while (min <= max)
-        //    {
-        //        int mid = (min + max) / 2;
-        //        if (key > dataArray[mid])
-        //            min = mid + 1;
-        //        else
-        //            max = mid - 1;
-        //        if (dataArray[mid] == key)
-        //        {
-        //            if (mid > 0)
-        //            {
-        //                while (dataArray[mid - 1] != key)
-        //                {
-        //                    return mid;
-        //                }
-        //                mid--;
-        //            }
-        //            else
-        //            {
-        //                return 0;
-        //            }
-        //    }
-        //    return -1; //not found
-        //}
-
 
 
         static void Main(string[] args)
